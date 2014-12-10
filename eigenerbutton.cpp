@@ -2,10 +2,10 @@
 #include <QMouseEvent>
 
 EigenerButton::EigenerButton(int reihe, int spalte, QWidget *parent) :
-    QPushButton(parent)
+    QPushButton(parent),
+    reihe(reihe),
+    spalte(spalte)
 {
-    this->reihe = reihe;
-    this->spalte = spalte;
 }
 
 void EigenerButton::mousePressEvent(QMouseEvent *e)
